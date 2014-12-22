@@ -1,7 +1,7 @@
 Name:		ktimer
 Summary:	Execute programs after some time
-Version:	4.13.3
-Release:	1
+Version:	4.14.3
+Release:	2
 Group:		Graphical desktop/KDE
 License:	LGPLv2
 URL:		http://utils.kde.org/projects/ktimer
@@ -28,6 +28,15 @@ KTimer is a little tool to execute programs after some time.
 %makeinstall_std -C build
 
 %changelog
+* Tue Nov 11 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.14.3-1
+- New version 4.14.3
+
+* Wed Oct 15 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.14.2-1
+- New version 4.14.2
+
+* Mon Sep 29 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.14.1-1
+- New version 4.14.1
+
 * Tue Jul 15 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.13.3-1
 - New version 4.13.3
 
