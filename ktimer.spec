@@ -7,16 +7,23 @@ License:	LGPLv2
 URL:		http://utils.kde.org/projects/ktimer
 Source:		http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake(ECM)
-
+BuildRequires:	cmake(KF5DocTools)
+BuildRequires:	cmake(KF5I18n)
+BuildRequires:	cmake(KF5WidgetsAddons)
+BuildRequires:	cmake(KF5XmlGui)
+BuildRequires:	cmake(KF5KIO)
+BuildRequires:	cmake(KF5IconThemes)
+BuildRequires:	cmake(KF5DBusAddons)
+BuildRequires:	cmake(KF5Notifications)
 
 %description
 KTimer is a little tool to execute programs after some time.
 
 %files
-%{_bindir}/ktimer
-%{_iconsdir}/*/*/apps/ktimer.*
-%{_datadir}applications/org.kde.ktimer.desktop
-%doc %{_docdir}/HTML/*/ktimer
+%{_bindir}/%{name}
+%{_iconsdir}/*/*/apps/%{name}.*
+%{_datadir}applications/org.kde.%{name}.desktop
+%doc %{_docdir}/HTML/*/%{name}
 
 
 #######################################################################
