@@ -20,10 +20,10 @@ BuildRequires:	cmake(KF5Notifications)
 KTimer is a little tool to execute programs after some time.
 
 %files
-%{_bindir}/%{name}
-%{_iconsdir}/*/*/apps/%{name}.*
-%{_usr}/shareapplications/org.kde.%{name}.desktop
-%doc %{_docdir}/HTML/*/%{name}
+%{_bindir}/ktimer
+%{_iconsdir}/*/*/apps/ktimer.*
+%{_datadir}/applications/org.kde.ktimer.desktop
+%doc %{_docdir}/HTML/*/ktimer
 
 
 #######################################################################
