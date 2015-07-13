@@ -22,7 +22,7 @@ KTimer is a little tool to execute programs after some time.
 %files
 %{_bindir}/%{name}
 %{_iconsdir}/*/*/apps/%{name}.*
-%{_datadir}applications/org.kde.%{name}.desktop
+%{_usr}/shareapplications/org.kde.%{name}.desktop
 %doc %{_docdir}/HTML/*/%{name}
 
 
