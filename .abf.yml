@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   ktimer-15.08.0.tar.xz: fff657aacb2201b26cf5e1209bc23eb7fb339118
+sources:
+  ktimer-15.08.1.tar.xz: 7d60018ec391bd9c697acb2305183d092a1d76db
