@@ -1,6 +1,6 @@
 Name:		ktimer
 Summary:	Execute programs after some time
-Version:	16.04.0
+Version:	16.04.1
 Release:	1
 Group:		Graphical desktop/KDE
 License:	LGPLv2
