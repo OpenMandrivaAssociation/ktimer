@@ -1,7 +1,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Name:		ktimer
 Summary:	Execute programs after some time
-Version:	 17.12.2
+Version:	 18.04.2
 Release:	1
 Group:		Graphical desktop/KDE
 License:	LGPLv2
@@ -24,6 +24,7 @@ KTimer is a little tool to execute programs after some time.
 %{_bindir}/ktimer
 %{_iconsdir}/*/*/apps/ktimer.*
 %{_datadir}/applications/org.kde.ktimer.desktop
+%{_datadir}/metainfo/org.kde.ktimer.appdata.xml
 
 #######################################################################
 
