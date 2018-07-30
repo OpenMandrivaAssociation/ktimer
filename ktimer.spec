@@ -1,7 +1,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Name:		ktimer
 Summary:	Execute programs after some time
-Version:	 18.04.2
+Version:	 18.07.80
 Release:	1
 Group:		Graphical desktop/KDE
 License:	LGPLv2
