@@ -2,7 +2,7 @@
 Name:		ktimer
 Summary:	Execute programs after some time
 Version:	22.12.3
-Release:	1
+Release:	2
 Group:		Graphical desktop/KDE
 License:	LGPLv2
 URL:		http://utils.kde.org/projects/ktimer
