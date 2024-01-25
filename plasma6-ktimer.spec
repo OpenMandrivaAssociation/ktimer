@@ -16,6 +16,7 @@ BuildRequires:	cmake(KF6KIO)
 BuildRequires:	cmake(KF6IconThemes)
 BuildRequires:	cmake(KF6DBusAddons)
 BuildRequires:	cmake(KF6Notifications)
+BuildRequires:	cmake(KF6StatusNotifierItem)
 BuildRequires:	cmake(Qt6Core5Compat)
 
 %description
