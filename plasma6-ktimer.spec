@@ -8,7 +8,7 @@ Version:	24.08.2
 Release:	%{?git:0.%{git}.}1
 Group:		Graphical desktop/KDE
 License:	LGPLv2
-URL:		http://utils.kde.org/projects/ktimer
+URL:		https://utils.kde.org/projects/ktimer
 %if 0%{?git:1}
 Source0:	https://invent.kde.org/utilities/ktimer/-/archive/%{gitbranch}/ktimer-%{gitbranchd}.tar.bz2#/ktimer-%{git}.tar.bz2
 %else
