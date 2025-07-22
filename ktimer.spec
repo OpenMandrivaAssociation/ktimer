@@ -4,7 +4,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Name:		ktimer
 Summary:	Execute programs after some time
-Version:	25.04.0
+Version:	25.04.3
 Release:	%{?git:0.%{git}.}1
 Group:		Graphical desktop/KDE
 License:	LGPLv2
@@ -26,27 +26,16 @@ BuildRequires:	cmake(KF6Notifications)
 BuildRequires:	cmake(KF6StatusNotifierItem)
 BuildRequires:	cmake(Qt6Core5Compat)
 
+%rename plasma6-ktimer
+
+BuildSystem:	cmake
+BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
+
 %description
 KTimer is a little tool to execute programs after some time.
 
-%files -f ktimer.lang
+%files -f %{name}.lang
 %{_bindir}/ktimer
 %{_iconsdir}/*/*/apps/ktimer.*
 %{_datadir}/applications/org.kde.ktimer.desktop
 %{_datadir}/metainfo/org.kde.ktimer.appdata.xml
-
-#######################################################################
-
-
-%prep
-%autosetup -p1 -n ktimer-%{?git:%{gitbranchd}}%{!?git:%{version}}
-%cmake \
-	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
-	-G Ninja
-
-%build
-%ninja -C build
-
-%install
-%ninja_install -C build
-%find_lang ktimer --with-html
